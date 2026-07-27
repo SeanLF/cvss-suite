@@ -1,0 +1,7 @@
+name: POC F PR CI
+on: [push, pull_request]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "CI RAN via ${{ github.event_name }}"
